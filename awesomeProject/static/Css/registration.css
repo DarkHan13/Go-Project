@@ -1,0 +1,172 @@
+/*REGISTRATION
+=====================================*/
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  #0e3959;
+}
+.contactus{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.title p{
+    color: #fff;
+    font-weight: 500;
+}
+/*TOOLS
+====================================*/
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 2fr;
+    grid-template-areas:
+        "form info"
+        "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+.contact{
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+}
+.contact p{
+    color: #0e3959;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.form{
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+}
+.map{
+    grid-area: map;
+}
+/*FORM
+====================================*/
+.formbox{
+    position: relative;
+    width: 100%;
+}
+.row{
+    display: flex;
+    grid-gap: 20px;
+}
+.formbox .row1 .inputbox{
+    width: 100%;
+}
+.inputbox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.inputbox span{
+    color: #0e3959;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.inputbox input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+}
+.inputbox textarea{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+.inputbox input[type="submit"]{
+    background: #0e3959;
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+.inputbox ::placeholder{
+    color: #999;
+    opacity: .7;
+}
+/*INFO
+====================================*/
+.info{}
+.infobox{}
+.info .infobox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.info .infobox div span{
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+.mail{
+    text-decoration: none;
+    color: #0e3959;
+}
+.tel{
+    text-decoration: none;
+    color: #0e3959;
+}
+/*MAP
+=====================================*/
+.map{
+    padding: 0;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+@media(max-width: 991px){
+    body{
+        background: #0e3959;
+    }
+    .contactus{
+        padding: 20px;
+    }
+    .box{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "form"
+            "info"
+            "map";
+    }
+    .map{
+        padding: 0;
+        min-height: 300px;
+    }
+}

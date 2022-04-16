@@ -1,0 +1,14 @@
+
+.header_container{
+    display: flex;
+    height: 50px;
+    padding: var(--spacing-small);
+    background-color: var(--color-medium);
+
+}
+.header_counter{
+    margin-left: auto;
+    padding-left: var(--spacing-small);
+    font-weight: bold;
+    cursor: pointer;
+}
