@@ -1,4 +1,6 @@
 
+let start = 0;
+
 class Products {
     constructor(){
         this.classNameActive = 'products_element_btn_active';
@@ -34,8 +36,9 @@ render(){
                 <li class="products_element">
                     <span class="products_element_name">${name}</span>
                     <img class="products_element_img" src="${img}" />
+                    <div>WORK WORK WORK</div>
                     <span class="products_element_price">
-                    <img class="icon" src="images/icon.svg">${price.toLocaleString()} Tenge</span>
+                    <img class="icon" src="../../../static/images/icon.svg">${price.toLocaleString()} Tenge</span>
                     <button class= "products_element_btn${activeClass}" onclick="productsPage.handleSetLocationStorage(this, '${id}')">${activeText}</button>
                 </li>`;
                 });

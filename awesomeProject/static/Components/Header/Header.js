@@ -1,3 +1,5 @@
+
+
 class Header {
     handlerOpenShoppingPage(){
         ShoppingPage.render();
